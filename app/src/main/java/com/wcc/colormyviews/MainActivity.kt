@@ -13,7 +13,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setColorButtonAction() //chama método que irá trocar a cor do botao ao clicar
+        setColorButtonAction()
+        setBoxColor()//chama método que irá trocar a cor do botao ao clicar
+    }
+
+    private fun setBoxColor() {
+        box_one_test.setOnClickListener{
+            it.setBackgroundResource(currentColor)
+        }
+        box_two_test.setOnClickListener{
+            it.setBackgroundResource(currentColor)
+        }
+        box_three_test.setOnClickListener{
+            it.setBackgroundResource(currentColor)
+        }
+        box_four_test.setOnClickListener{
+            it.setBackgroundResource(currentColor)
+        }
+        box_five_test.setOnClickListener{
+            it.setBackgroundResource(currentColor)
+        }
     }
 
     private fun setColorButtonAction() {
